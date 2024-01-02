@@ -1,0 +1,200 @@
+/* Reset de estilos padrão para todos os elementos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Gabriola", sans-serif;
+}
+
+/* Estilos gerais para o corpo do site */
+body {
+    background-color: rgba(253, 128, 226, 0.664);
+    height: 100vh;
+}
+
+/* Container principal para a interface do site */
+.interface {
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+/* Estilos para elementos com a classe "flex" */
+.flex {
+    display: flex;
+}
+
+/* Estilos para o cabeçalho do site */
+header {
+    padding: 10px 4%;
+}
+
+header > .interface {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+header a {
+    color: #1f1e1e;
+    text-decoration: none;
+    font-size: 27px;
+    display: inline-block;
+    transition: .2s;
+}
+
+header a:hover {
+    color: #88dafa;
+    transform: scale(1.07);
+}
+
+header nav ul {
+    list-style-type: none;
+}
+
+header nav ul li {
+    display: inline-block;
+    padding: 0 40px;
+}
+
+header .btn-contato button {
+    padding: 10px 40px;
+    font-size: 28px;
+    font-weight: 500;
+    background: #88dafa;
+    border: 0;
+    border-radius: 40px;
+    cursor: pointer;
+}
+
+/* Estilos para a seção de topo do site */
+section.topo-do-site {
+    padding: 40px 4%;
+}
+
+section.topo-do-site .flex{
+    align-items: center;
+    justify-content: center;
+    gap: 90px;
+    font-size: 27px;
+}
+
+.topo-do-site h1{
+    color: #0a0a0a;
+    font-size: 50px;
+    text-shadow: 2px 2px 4px rgba(250, 248, 248, 0.863);
+    text-shadow: -2px -2px 0 #fffdfd;
+    line-height: 40px;
+}
+
+.topo-do-site h1 span{
+    color: aqua;
+}
+
+.formulario-contato {
+    background-color: #f8f8f8;
+    padding: 20px;
+    margin-top: 40px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.formulario-contato h2 {
+    color: #333;
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.formulario-contato form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.formulario-contato label {
+    display: block;
+    margin-bottom: 8px;
+}
+
+.formulario-contato input,
+.formulario-contato textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+}
+
+.formulario-contato button {
+    background-color: #88dafa;
+    color: #fff;
+    padding: 12px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.txt-topo-site .btn-social button{
+    width: 60px;
+    height: 60px;
+    border-radius: 50px;
+    border: none;
+    font-size: 30px;
+    cursor: pointer;
+    margin: 05 20px;
+
+}
+
+.topo-do-site .btn-social{
+    display: inline-block;
+    padding: 0 40px;
+}
+
+.topo-do-site .flex {
+    display: flex;
+    justify-content: space-between;
+}
+
+.topo-do-site .txt-topo-site {
+    flex: 1; /* Ocupa a maior parte da largura disponível */
+    margin-bottom: 10px; /* Adiciona um espaçamento inferior de 20px */
+}
+
+.topo-do-site .img-topo-site {
+    flex: 0; /* Ocupa a maior parte da largura disponível */
+}
+
+.topo-do-site .btn-social button {
+    padding: 5px 40px;
+    font-size: 28px;
+    font-weight: 400;
+    background: #88dafa;
+    border: 0;
+    border-radius: 10px;
+    cursor: pointer;
+    margin: 0 10px;
+}
+
+
+.topo-do-site {
+    position: relative;
+    min-height: 100vh; /* Garante que o conteúdo da página ocupe pelo menos a altura total da tela */
+}
+
+.topo-do-site .btn-social {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-bottom: 20px; /* Adiciona um espaçamento do rodapé */
+}
+
+.topo-do-site .btn-social button {
+    padding: 5px 40px;
+    font-size: 28px;
+    font-weight: 400;
+    background: #88dafa;
+    border: 0;
+    border-radius: 10px;
+    cursor: pointer;
+    margin: 0 10px;
+}
+
